@@ -6,6 +6,10 @@ This repo tells you exactly how to make the ultimate VS Code development setup (
 
 I have been a dedicated user of Neovim for the past couple of months. From learning all the VIM motions and bindings to setting up Neovim using Lua, I realized I was getting too deep into the rabbit hole. (I also got myself a split keyboard!) This has definitely helped me become a more "efficient" developer. But I always missed the `plug-and-play` features that VS Code provided out of the box. So yeah, this is me migrating my fast dev neovim experience to VS Code. This is definitely an experimental setup right now but will also (hopefully) improve over time.
 
+## A Glimpse?
+
+https://github.com/user-attachments/assets/cd0ad5d4-88e3-4eb1-bf49-d225f9d0ffbf
+
 ## Before you proceed
 
 I highly recommend you to get comfortable with VIM motions and keybindings before adopting this setup.
