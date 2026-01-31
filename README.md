@@ -26,6 +26,8 @@ I highly recommend you to get comfortable with VIM motions and keybindings befor
 
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
 
+---
+
 ## Setup Guidelines
 
 ### Step 1: Clone the Repository
@@ -37,8 +39,6 @@ git clone https://github.com/sazuyakun/vscode-setup
 cd vscode-setup
 code .
 ```
-
----
 
 ### Step 2: Get Your Absolute Path
 
@@ -58,8 +58,6 @@ Choose **one** of these methods:
 pwd
 ```
 
----
-
 ### Step 3: Update Configuration Path
 
 - Open `settings.json` in your cloned repository
@@ -73,13 +71,9 @@ pwd
 ]
 ```
 
----
-
 ### Step 4: Install Required Extensions
 
 Ensure all extensions listed in the repository are **installed** and **enabled**
-
----
 
 ### Step 5: Apply User Settings
 
@@ -90,8 +84,6 @@ Ensure all extensions listed in the repository are **installed** and **enabled**
 - **Replace all contents** with the contents from your repository's `settings.json`
 - **Save the file** (`Cmd+S` / `Ctrl+S`)
 
----
-
 ### Step 6: Enable Custom CSS and JS
 
 - Open the Command Palette again (`Cmd+Shift+P` / `Ctrl+Shift+P`)
@@ -99,8 +91,6 @@ Ensure all extensions listed in the repository are **installed** and **enabled**
 - VS Code will prompt you to reload — click **Reload**
 
 > 💡 You may see a warning about VS Code being corrupted. This is normal and expected when using custom CSS/JS.
-
----
 
 ### Step 7: Apply Keyboard Shortcuts
 
