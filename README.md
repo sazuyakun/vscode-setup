@@ -28,7 +28,9 @@ I highly recommend you to get comfortable with VIM motions and keybindings befor
 
 ## Setup Guidelines
 
-### 1. Clone the repository where you want to store the **custom CSS and JS files**
+### Step 1: Clone the Repository
+
+Open your terminal and run:
 
 ```bash
 git clone https://github.com/sazuyakun/vscode-setup
@@ -36,21 +38,37 @@ cd vscode-setup
 code .
 ```
 
-### 2. Get the Absolute Path (Very Important)
+This will clone the repository and open it in VS Code.
 
-Choose one method:
-**Option A - VS Code:**
+---
 
-- Right-click in the Explorer sidebar (Any empty space in the file tree)
-- Select `Copy Path`
+### Step 2: Get Your Absolute Path
 
-**Option B - Terminal:**
+> ⚠️ **Critical Step:** You'll need the absolute path to your cloned repository.
+
+Choose **one** of these methods:
+
+#### Option A: Using VS Code
+
+1. Open the Explorer sidebar
+2. Right-click on any empty space in the file tree
+3. Select **Copy Path**
+
+#### Option B: Using Terminal
 
 ```bash
 pwd
 ```
 
-### 3. Update the `settings.json` file in this directory (around line 24)
+Copy the output path.
+
+---
+
+### Step 3: Update Configuration Path
+
+1. Open `settings.json` in your cloned repository
+2. Navigate to **line 24** (approximately)
+3. Replace the placeholder paths with your absolute path:
 
 ```json
 "vscode_custom_css.imports": [
@@ -59,23 +77,71 @@ pwd
 ]
 ```
 
-### 4. Make sure all the extensions listed above are installed properly and enabled in VS Code.
+**Example:**
 
-### 5. Copy the contents of the `settings.json` file in this directory to User `settings.json`
+```json
+"vscode_custom_css.imports": [
+    "file:///Users/yourname/Documents/vscode-setup/custom-vscode.css",
+    "file:///Users/yourname/Documents/vscode-setup/vscode-script.js"
+]
+```
 
-- `cmd+shift+p` on Mac
-- Search for `Preferences: Open User Settings (JSON)`
-- Replace all the contents of this file.
-- Save the file
+---
 
-### 6. `cmd + shift + p` again and select `Enable Custom CSS and JS` (Will ask to reload)
+### Step 4: Install Required Extensions
 
-### 7. **Finally:** Copy the contents of the `keybindings.json` file in this directory to User `keybindings.json`
+Ensure all extensions listed in the repository are:
 
-- `cmd+shift+p` on Mac
-- Search for `Preferences: Open Keyboard Shortcuts (JSON)`
-- Replace all the contents of this file.
-- Save the file
+- ✅ Installed
+- ✅ Enabled in VS Code
+
+You can verify this in the Extensions panel (`Cmd+Shift+X` / `Ctrl+Shift+X`).
+
+---
+
+### Step 5: Apply User Settings
+
+1. Open the Command Palette:
+   - **macOS:** `Cmd+Shift+P`
+   - **Windows/Linux:** `Ctrl+Shift+P`
+
+2. Search for: `Preferences: Open User Settings (JSON)`
+
+3. **Replace all contents** with the contents from your repository's `settings.json`
+
+4. **Save the file** (`Cmd+S` / `Ctrl+S`)
+
+---
+
+### Step 6: Enable Custom CSS and JS
+
+1. Open the Command Palette again (`Cmd+Shift+P` / `Ctrl+Shift+P`)
+
+2. Search for and select: `Enable Custom CSS and JS`
+
+3. VS Code will prompt you to reload — click **Reload**
+
+> 💡 You may see a warning about VS Code being corrupted. This is normal and expected when using custom CSS/JS.
+
+---
+
+### Step 7: Apply Keyboard Shortcuts
+
+1. Open the Command Palette:
+   - **macOS:** `Cmd+Shift+P`
+   - **Windows/Linux:** `Ctrl+Shift+P`
+
+2. Search for: `Preferences: Open Keyboard Shortcuts (JSON)`
+
+3. **Replace all contents** with the contents from your repository's `keybindings.json`
+
+4. **Save the file** (`Cmd+S` / `Ctrl+S`)
+
+---
+
+## ✨ You're All Set!
+
+Your VS Code is now customized with your personal CSS, JavaScript, and keybindings!
 
 ### Note:
 
