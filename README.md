@@ -38,8 +38,6 @@ cd vscode-setup
 code .
 ```
 
-This will clone the repository and open it in VS Code.
-
 ---
 
 ### Step 2: Get Your Absolute Path
@@ -50,9 +48,9 @@ Choose **one** of these methods:
 
 #### Option A: Using VS Code
 
-1. Open the Explorer sidebar
-2. Right-click on any empty space in the file tree
-3. Select **Copy Path**
+- Open the Explorer sidebar
+- Right-click on any empty space in the file tree
+- Select **Copy Path**
 
 #### Option B: Using Terminal
 
@@ -60,15 +58,13 @@ Choose **one** of these methods:
 pwd
 ```
 
-Copy the output path.
-
 ---
 
 ### Step 3: Update Configuration Path
 
-1. Open `settings.json` in your cloned repository
-2. Navigate to **line 24** (approximately)
-3. Replace the placeholder paths with your absolute path:
+- Open `settings.json` in your cloned repository
+- Navigate to **line 24** (approximately)
+- Replace the placeholder paths with your absolute path:
 
 ```json
 "vscode_custom_css.imports": [
@@ -77,49 +73,30 @@ Copy the output path.
 ]
 ```
 
-**Example:**
-
-```json
-"vscode_custom_css.imports": [
-    "file:///Users/yourname/Documents/vscode-setup/custom-vscode.css",
-    "file:///Users/yourname/Documents/vscode-setup/vscode-script.js"
-]
-```
-
 ---
 
 ### Step 4: Install Required Extensions
 
-Ensure all extensions listed in the repository are:
-
-- ✅ Installed
-- ✅ Enabled in VS Code
-
-You can verify this in the Extensions panel (`Cmd+Shift+X` / `Ctrl+Shift+X`).
+Ensure all extensions listed in the repository are **installed** and **enabled**
 
 ---
 
 ### Step 5: Apply User Settings
 
-1. Open the Command Palette:
-   - **macOS:** `Cmd+Shift+P`
-   - **Windows/Linux:** `Ctrl+Shift+P`
-
-2. Search for: `Preferences: Open User Settings (JSON)`
-
-3. **Replace all contents** with the contents from your repository's `settings.json`
-
-4. **Save the file** (`Cmd+S` / `Ctrl+S`)
+- Open the Command Palette:
+  - **macOS:** `Cmd+Shift+P`
+  - **Windows/Linux:** `Ctrl+Shift+P`
+- Search for: `Preferences: Open User Settings (JSON)`
+- **Replace all contents** with the contents from your repository's `settings.json`
+- **Save the file** (`Cmd+S` / `Ctrl+S`)
 
 ---
 
 ### Step 6: Enable Custom CSS and JS
 
-1. Open the Command Palette again (`Cmd+Shift+P` / `Ctrl+Shift+P`)
-
-2. Search for and select: `Enable Custom CSS and JS`
-
-3. VS Code will prompt you to reload — click **Reload**
+- Open the Command Palette again (`Cmd+Shift+P` / `Ctrl+Shift+P`)
+- Search for and select: `Enable Custom CSS and JS`
+- VS Code will prompt you to reload — click **Reload**
 
 > 💡 You may see a warning about VS Code being corrupted. This is normal and expected when using custom CSS/JS.
 
@@ -127,21 +104,18 @@ You can verify this in the Extensions panel (`Cmd+Shift+X` / `Ctrl+Shift+X`).
 
 ### Step 7: Apply Keyboard Shortcuts
 
-1. Open the Command Palette:
-   - **macOS:** `Cmd+Shift+P`
-   - **Windows/Linux:** `Ctrl+Shift+P`
-
-2. Search for: `Preferences: Open Keyboard Shortcuts (JSON)`
-
-3. **Replace all contents** with the contents from your repository's `keybindings.json`
-
-4. **Save the file** (`Cmd+S` / `Ctrl+S`)
+- Open the Command Palette:
+  - **macOS:** `Cmd+Shift+P`
+  - **Windows/Linux:** `Ctrl+Shift+P`
+- Search for: `Preferences: Open Keyboard Shortcuts (JSON)`
+- **Replace all contents** with the contents from your repository's `keybindings.json`
+- **Save the file** (`Cmd+S` / `Ctrl+S`)
 
 ---
 
 ## ✨ You're All Set!
 
-Your VS Code is now customized with your personal CSS, JavaScript, and keybindings!
+Make changes and customise it further from here for your liking
 
 ### Note:
 
