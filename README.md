@@ -2,7 +2,7 @@
 
 This repo tells you exactly how to make the ultimate VS Code development setup (Opinionated obviously).
 
-## Motivation
+## Why this Setup?
 
 I have been a dedicated user of Neovim for the past couple of months. From learning all the VIM motions and bindings to setting up Neovim using Lua, I realized I was getting too deep into the rabbit hole. (I also got myself a split keyboard!) This has definitely helped me become a more "efficient" developer. But I always missed the `plug-and-play` features that VS Code provided out of the box. So yeah, this is me migrating my fast dev neovim experience to VS Code. This is definitely an experimental setup right now but will also (hopefully) improve over time.
 
@@ -22,7 +22,7 @@ I highly recommend you to get comfortable with VIM motions and keybindings befor
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
-**Optional** but highly recommended:
+### **Optional** but highly recommended:
 
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
 
@@ -32,24 +32,30 @@ I highly recommend you to get comfortable with VIM motions and keybindings befor
 
 ```bash
 git clone https://github.com/sazuyakun/vscode-setup
-```
-
-2. Enter directory
-
-```bash
 cd vscode-setup
 code .
 ```
 
-3. Update the settings.json file in this directory
-   - On **vscode**, right click on any empty space of your directory and click `Copy Path` (eg: Users/...)
-   - On **terminal**, enter `pwd` and copy the path printed out
+2. Get the Absolute Path (Very Important)
+
+Choose one method:
+**Option A - VS Code:**
+
+- Right-click in the Explorer sidebar (Any empty space in the file tree)
+- Select `Copy Path`
+
+**Option B - Terminal:**
+
+```bash
+pwd
+```
+
+3. Update the `settings.json` file in this directory (around line 24)
 
 ```json
-// line 24
 "vscode_custom_css.imports": [
-    "file:///path/to/custom-vscode.css", // Replace your css file path here
-    "file:///path/to/vscode-script.js"   // Replace your js file path here
+    "file:///YOUR/ABSOLUTE/PATH/custom-vscode.css",
+    "file:///YOUR/ABSOLUTE/PATH/vscode-script.js"
 ]
 ```
 
@@ -78,3 +84,16 @@ All the additional changes in the settings that you make / are made while downlo
   "window.newWindowProfile": "Default",
   ...
 ```
+
+## Troubleshooting
+
+If custom CSS/JS doesn't load:
+
+1. Verify the file paths are absolute (start with `file:///`)
+2. Check that paths use forward slashes `/` (even on Windows)
+3. Ensure no typos in the file paths
+4. Try running `Reload Custom CSS and JS` command
+
+---
+
+**Feedback & Contributions:** Issues and pull requests are welcome!
