@@ -170,18 +170,11 @@
   backdrop-filter: blur(8px);
 }
 
-/* Add a background to the item currently highlighted by arrow keys */
 .monaco-list .monaco-list-row.focused {
-  background-color: rgba(
-    79,
-    89,
-    113,
-    0.3
-  ) !important; /* Lighter version of your selected color */
-  outline: none !important; /* Keep your preference of no outline */
+  background-color: rgba(79, 89, 113, 0.3) !important;
+  outline: none !important;
 }
 
-/* Ensure the text is visible on the focused item */
 .monaco-list .monaco-list-row.focused .label-name {
   color: #fff !important;
 }
