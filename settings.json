@@ -1,0 +1,252 @@
+{
+  // Editor controls
+  "editor.accessibilitySupport": "off",
+  "editor.fontSize": 14,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.renderWhitespace": "none",
+
+  "window.titleBarStyle": "native",
+
+  // Custom UI
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "custom-ui-style.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 20,
+      "y": 16
+    }
+  },
+  "vscode_custom_css.imports": [
+    "file:///path/to/custom-vscode.css",
+    "file:///path/to/vscode-script.js"
+  ],
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#050608",
+    "activityBar.background": "#050608",
+    "breadcrumb.background": "#050608",
+
+    "editor.background": "#050608",
+    "editorGutter.background": "#050608",
+    "sideBar.background": "#0c0e12",
+    "panel.background": "#050608",
+
+    "editorWidget.background": "#050608",
+    "editorWidget.border": "#050608",
+
+    "editorHoverWidget.background": "#050608",
+    "editorSuggestWidget.background": "#050608"
+  },
+
+  // Formatting
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.overviewRulerBorder": false,
+
+  // Workbench controls
+  "workbench.editor.showTabs": "none",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.tree.indent": 24,
+
+  // File paths
+  "breadcrumbs.filePath": "last",
+  "breadcrumbs.symbolPath": "off",
+  "explorer.confirmDragAndDrop": false,
+
+  // Custom comment
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["comment", "comment.line", "comment.block"],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
+  // IntelliSense settings
+  "editor.suggestSelection": "first",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+
+  // GitLens (matching gitsigns features)
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+
+  // Error Lens (inline diagnostics)
+  "errorLens.enabled": true,
+  "errorLens.fontSize": "12",
+
+  // Vim extension settings
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.ignorecase": true,
+  "vim.smartcase": true,
+  "vim.leader": "<space>",
+
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Clear search highlights
+    {
+      "before": ["<leader>", "n", "h"],
+      "commands": [":nohl"]
+    },
+
+    // Increment/Decrement
+    {
+      "before": ["<leader>", "+"],
+      "after": ["<C-a>"]
+    },
+    {
+      "before": ["<leader>", "-"],
+      "after": ["<C-x>"]
+    },
+
+    // Split management
+    {
+      "before": ["<leader>", "s", "v"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<leader>", "s", "h"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<leader>", "s", "x"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "s", "e"],
+      "commands": ["workbench.action.evenEditorWidths"]
+    },
+
+    // File explorer
+    {
+      "before": ["<leader>", "e", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "e", "f"],
+      "commands": ["workbench.files.action.showActiveFileInExplorer"]
+    },
+
+    // Telescope equivalents
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "f", "r"],
+      "commands": ["workbench.action.openRecent"]
+    },
+
+    // LSP features
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.revealDeclaration"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+
+    // Diagnostics
+    {
+      "before": ["<leader>", "d"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.nextInFiles"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prevInFiles"]
+    },
+
+    // Formatting
+    {
+      "before": ["<leader>", "m", "p"],
+      "commands": ["editor.action.formatDocument"]
+    },
+
+    // Tab management
+    {
+      "before": ["<leader>", "t", "o"],
+      "commands": ["workbench.action.files.newUntitledFile"]
+    },
+    {
+      "before": ["<leader>", "t", "x"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "t", "n"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<leader>", "t", "p"],
+      "commands": ["workbench.action.previousEditor"]
+    }
+  ],
+
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "m", "p"],
+      "commands": ["editor.action.formatSelection"]
+    }
+  ],
+
+  // Additional
+  "window.newWindowProfile": "Default",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "window.commandCenter": false,
+  "chat.commandCenter.enabled": false
+}
