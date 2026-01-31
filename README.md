@@ -28,7 +28,7 @@ I highly recommend you to get comfortable with VIM motions and keybindings befor
 
 ## Setup Guidelines
 
-1. Clone the repository where you want to store the **custom CSS and JS files**
+### 1. Clone the repository where you want to store the **custom CSS and JS files**
 
 ```bash
 git clone https://github.com/sazuyakun/vscode-setup
@@ -36,7 +36,7 @@ cd vscode-setup
 code .
 ```
 
-2. Get the Absolute Path (Very Important)
+### 2. Get the Absolute Path (Very Important)
 
 Choose one method:
 **Option A - VS Code:**
@@ -50,7 +50,7 @@ Choose one method:
 pwd
 ```
 
-3. Update the `settings.json` file in this directory (around line 24)
+### 3. Update the `settings.json` file in this directory (around line 24)
 
 ```json
 "vscode_custom_css.imports": [
@@ -59,21 +59,23 @@ pwd
 ]
 ```
 
-4. Make sure all the extensions listed above are installed properly and enabled in VS Code.
+### 4. Make sure all the extensions listed above are installed properly and enabled in VS Code.
 
-5. Copy the contents of the `settings.json` file in this directory to User `settings.json`
-   - `cmd+shift+p` on Mac
-   - Search for `Preferences: Open User Settings (JSON)`
-   - Replace all the contents of this file.
-   - Save the file
+### 5. Copy the contents of the `settings.json` file in this directory to User `settings.json`
 
-6. `cmd + shift + p` again and select `Enable Custom CSS and JS` (Will ask to reload)
+- `cmd+shift+p` on Mac
+- Search for `Preferences: Open User Settings (JSON)`
+- Replace all the contents of this file.
+- Save the file
 
-7. **Finally:** Copy the contents of the `keybindings.json` file in this directory to User `keybindings.json`
-   - `cmd+shift+p` on Mac
-   - Search for `Preferences: Open Keyboard Shortcuts (JSON)`
-   - Replace all the contents of this file.
-   - Save the file
+### 6. `cmd + shift + p` again and select `Enable Custom CSS and JS` (Will ask to reload)
+
+### 7. **Finally:** Copy the contents of the `keybindings.json` file in this directory to User `keybindings.json`
+
+- `cmd+shift+p` on Mac
+- Search for `Preferences: Open Keyboard Shortcuts (JSON)`
+- Replace all the contents of this file.
+- Save the file
 
 ### Note:
 
