@@ -30,7 +30,7 @@ I highly recommend you to get comfortable with VIM motions and keybindings befor
 
 ## Setup Guidelines
 
-### Step 1: Clone the Repository
+### 1: Clone the Repository
 
 Open your terminal and run:
 
@@ -40,7 +40,7 @@ cd vscode-setup
 code .
 ```
 
-### Step 2: Get Your Absolute Path
+### 2: Get Your Absolute Path
 
 > ⚠️ **Critical Step:** You'll need the absolute path to your cloned repository.
 
@@ -58,7 +58,7 @@ Choose **one** of these methods:
 pwd
 ```
 
-### Step 3: Update Configuration Path
+### 3: Update Configuration Path
 
 - Open `settings.json` in your cloned repository
 - Navigate to **line 24** (approximately)
@@ -71,11 +71,11 @@ pwd
 ]
 ```
 
-### Step 4: Install Required Extensions
+### 4: Install Required Extensions
 
 Ensure all extensions listed in the repository are **installed** and **enabled**
 
-### Step 5: Apply User Settings
+### 5: Apply User Settings
 
 - Open the Command Palette:
   - **macOS:** `Cmd+Shift+P`
@@ -84,7 +84,7 @@ Ensure all extensions listed in the repository are **installed** and **enabled**
 - **Replace all contents** with the contents from your repository's `settings.json`
 - **Save the file** (`Cmd+S` / `Ctrl+S`)
 
-### Step 6: Enable Custom CSS and JS
+### 6: Enable Custom CSS and JS
 
 - Open the Command Palette again (`Cmd+Shift+P` / `Ctrl+Shift+P`)
 - Search for and select: `Enable Custom CSS and JS`
@@ -92,7 +92,7 @@ Ensure all extensions listed in the repository are **installed** and **enabled**
 
 > 💡 You may see a warning about VS Code being corrupted. This is normal and expected when using custom CSS/JS.
 
-### Step 7: Apply Keyboard Shortcuts
+### 7: Apply Keyboard Shortcuts
 
 - Open the Command Palette:
   - **macOS:** `Cmd+Shift+P`
