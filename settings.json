@@ -2,7 +2,7 @@
   // Editor controls
   "editor.accessibilitySupport": "off",
   "editor.fontSize": 14,
-  "editor.lineNumbers": "relative",
+  // "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.insertSpaces": true,
   "editor.wordWrap": "on",
@@ -12,7 +12,6 @@
   "window.titleBarStyle": "native",
 
   // Custom UI
-  "workbench.colorTheme": "Catppuccin Frappé",
   "custom-ui-style.electron": {
     "titleBarStyle": "hiddenInset",
     "trafficLightPosition": {
@@ -21,8 +20,8 @@
     }
   },
   "vscode_custom_css.imports": [
-    "file:///YOUR/ABSOLUTE/PATH/vscode-styles.css",
-    "file:///YOUR/ABSOLUTE/PATH/vscode-script.js"
+    "file:///Users/sohamsamal/Documents/Vscode_scripts/custom-vscode.css",
+    "file:///Users/sohamsamal/Documents/Vscode_scripts/vscode-script.js"
   ],
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#050608",
@@ -72,7 +71,7 @@
     ]
   },
 
-  // IntelliSense settings
+  // LSP/IntelliSense settings
   "editor.suggestSelection": "first",
   "editor.quickSuggestions": {
     "other": true,
@@ -242,11 +241,24 @@
     }
   ],
 
+  // python
+  "python.analysis.autoImportCompletions": true,
+
   // Additional
   "window.newWindowProfile": "Default",
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.nextEditSuggestions.enabled": false,
   "window.commandCenter": false,
-  "chat.commandCenter.enabled": false
+  "chat.commandCenter.enabled": false,
+  "workbench.iconTheme": "catppuccin-frappe",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "python": false
+  },
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "chat.viewSessions.orientation": "stacked"
 }
